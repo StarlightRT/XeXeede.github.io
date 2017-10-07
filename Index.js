@@ -6,7 +6,7 @@ function changingColors() {
     waitThenColor(i);
 }
 function waitThenColor(i) {
-    var time = (.333333 + (Math.random() * (3))) * 50;        
+    var time = (1 + (Math.random() * (3))) * 500;        
     var letters = '0123456789ABCDEF';            
     var color = '#';
     var color2 = '#';
@@ -23,7 +23,7 @@ function waitThenColor(i) {
         }, time);
     }
     document.body.style.backgroundColor = color; 
-      
+
     for (let q = 0; q < 6; q++) {
         color2 += letters[Math.floor(Math.random() * 16)];
     } 
